@@ -1,4 +1,4 @@
-# patient-creation-script
+# Patient Creation Script
 
 Steps to run the Patient Auto Insert Script
 
