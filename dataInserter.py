@@ -260,7 +260,7 @@ class dataInserter:
                                    '1234 ,'
                                    '1234 ,'
                                    '1 ,'
-                                   'to_date(\'' + arriveDate +'\',\'DD-MON-RRRR HH24:MI:SS\') + 6/24,'
+                                   'sydate ,'
                                    'to_date(\'' + maxDate +'\',\'DD-MON-RRRR HH24:MI:SS\'),'
                                    + typeVar + ')'
                                     )
@@ -289,7 +289,7 @@ class dataInserter:
                                    '1234 ,'
                                    '1234 ,'
                                    '1 ,'
-                                   'to_date(\'' + arriveDate +'\',\'DD-MON-RRRR HH24:MI:SS\') + 6/24,'
+                                   'sysdate ,'
                                    'to_date(\'' + maxDate +'\',\'DD-MON-RRRR HH24:MI:SS\'),'
                                     + typeVar + ')'
                                     )
