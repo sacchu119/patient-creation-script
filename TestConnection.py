@@ -1,6 +1,7 @@
 import cx_Oracle
 try:
-    con = cx_Oracle.connect('v500/v500@ipaca1.ip.devcerner.net:1521/cmtcrt.world')
+    con = cx_Oracle.connect('') '''username/password@domain_name:port_number/instance_name'''
     print "There Connection Success!"
-except:
+except Exception as e:
+    print(e)
     print "There was an error while connecting to domain!"

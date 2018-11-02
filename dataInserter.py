@@ -150,9 +150,9 @@ class dataInserter:
         relationTypeThree = dataFetch.getCodeValue('DISPLAY' ,'331','Family Physician' )
         active = dataFetch.getCodeValue('DISPLAY_KEY' ,'48' ,'ACTIVE' )
         maxDate = '31-DEC-2100 23:59:59'
-        Facility = dataFetch.getCodeValue('DISPLAY_KEY' ,'220' ,'STARTORG' )
+        Facility = dataFetch.getCodeValue('DISPLAY_KEY' ,'220' ,'STARTORGANIZATION' )
         if(Facility == 0):
-            Facility = dataFetch.getCodeValue('DESCRIPTION' ,'220' ,'START Organization' )
+            Facility = dataFetch.getCodeValue('DESCRIPTION' ,'220' ,'START ORGANIZATION' )
         aliasPool = dataFetch.getCodeValue('DISPLAY' ,'263' ,'FINNUMBER' )
         if(aliasPool == 0):
             aliasPool = dataFetch.getCodeValue('DISPLAY_KEY' ,'263' ,'FIN' )
@@ -260,7 +260,7 @@ class dataInserter:
                                    '1234 ,'
                                    '1234 ,'
                                    '1 ,'
-                                   'sydate ,'
+                                   'sysdate ,'
                                    'to_date(\'' + maxDate +'\',\'DD-MON-RRRR HH24:MI:SS\'),'
                                    + typeVar + ')'
                                     )
@@ -289,7 +289,7 @@ class dataInserter:
                                    '1234 ,'
                                    '1234 ,'
                                    '1 ,'
-                                   'sysdate ,'
+                                   'sysdate,'
                                    'to_date(\'' + maxDate +'\',\'DD-MON-RRRR HH24:MI:SS\'),'
                                     + typeVar + ')'
                                     )
