@@ -150,7 +150,7 @@ class dataInserter:
         relationTypeThree = dataFetch.getCodeValue('DISPLAY' ,'331','Family Physician' )
         active = dataFetch.getCodeValue('DISPLAY_KEY' ,'48' ,'ACTIVE' )
         maxDate = '31-DEC-2100 23:59:59'
-        Facility = dataFetch.getCodeValue('DISPLAY_KEY' ,'220' ,'STARTORGANIZATION' )
+        Facility = dataFetch.getCodeValue('DISPLAY_KEY' ,'220' ,'STARTORG' )
         if(Facility == 0):
             Facility = dataFetch.getCodeValue('DESCRIPTION' ,'220' ,'START ORGANIZATION' )
         aliasPool = dataFetch.getCodeValue('DISPLAY' ,'263' ,'FINNUMBER' )
