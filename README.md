@@ -23,20 +23,20 @@ Creating the CSV
 1.	Creating the CSV is easy an simple , first download the patient registration excel from JIRA .
 2.	Make sure you keep a copy of the original for reference.
 3.	Open the excel and first reorder the columns in the following order.
-  a.	Last Name – You should add this new column and name it accordingly to your JIRA.
-  b.	FirstName – Enter P1 and you can easily drag the mouse pointer to create its preceding values.(If you have the same patient with 2 Encounters use the same last name and first name, In the first row it will create the patient and add encounter. If the same patient name is found again it will only insert encounter)
-  c.	Age – Don’t Enter any date just enter the age and the script will calculate the age according to today’s date.
-  d.	Gender – If the test plan has only F and M , Please Find and replace it with MALE and FEMALE(Will update it sooner for taking input as F and M)
-  e.	Encounter type – please check if the spelling of all types of encounter type is correct.
-  f.	Building – this will change based on the domains we use because organization is created by someone else, so this script now has been set up for start organization we can update the script easily if we want to use organization also. So the name of the building for Start Building in CMTCERT is ‘START BLDG’
-  g.	Nurse/Ambulatory – The same goes for this in CMTCERT so the NURSE/AMB name for Start office is ‘Start Office’(if you are confused about names you can search it in the code_value table and use those names, if you want to use different Nurse/AMB same goes for Building)
-  h.	Arrive/admit/reg date time – Please make sure the date in this format ‘dd-MMM-YYYY HH:MM:SS’ for ex ’01-JAN-2018 23:59:59’(Please not you can format it by right clicking and FORMAT CELLS, You can select the whole column and do it in one shot)
-  i.	Admit EP First Name – Check for Spelling.
-  j.	Admit EP Last Name 
-  k.	Attending EP First Name
-  l.	Attending EP Last Name
-  m.	Discharge time – again the same format as Arrive date time
-  n.	Discharge Disp.
+  3.1.	Last Name – You should add this new column and name it accordingly to your JIRA.
+  3.2.	FirstName – Enter P1 and you can easily drag the mouse pointer to create its preceding values.(If you have the same patient with 2 Encounters use the same last name and first name, In the first row it will create the patient and add encounter. If the same patient name is found again it will only insert encounter)
+  3.3	Age – Don’t Enter any date just enter the age and the script will calculate the age according to today’s date.
+  3.4	Gender – If the test plan has only F and M , Please Find and replace it with MALE and FEMALE(Will update it sooner for taking input as F and M)
+  3.5	Encounter type – please check if the spelling of all types of encounter type is correct.
+  3.6	Building – this will change based on the domains we use because organization is created by someone else, so this script now has been set up for start organization we can update the script easily if we want to use organization also. So the name of the building for Start Building in CMTCERT is ‘START BLDG’
+  3.7	Nurse/Ambulatory – The same goes for this in CMTCERT so the NURSE/AMB name for Start office is ‘Start Office’(if you are confused about names you can search it in the code_value table and use those names, if you want to use different Nurse/AMB same goes for Building)
+  3.8	Arrive/admit/reg date time – Please make sure the date in this format ‘dd-MMM-YYYY HH:MM:SS’ for ex ’01-JAN-2018 23:59:59’(Please not you can format it by right clicking and FORMAT CELLS, You can select the whole column and do it in one shot)
+  3.9	Admit EP First Name – Check for Spelling.
+  3.10	Admit EP Last Name
+  3.11	Attending EP First Name
+  3.12	Attending EP Last Name
+  3.13	Discharge time – again the same format as Arrive date time
+  3.15	Discharge Disp.
 4.	You can leave the blank space if you don’t want to insert any fields like age usually, leave it blank don’t inset 0 and make sure you have left a field empty like the below.
 5.	After all the above steps Save the Excel and Save as .csv and give any desired name.
 6.	After Saving don’t open the CSV in excel application, because it will change the date format, to make sure the data is correct open the file in Notepad++ or any text editor.
